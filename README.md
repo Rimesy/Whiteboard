@@ -7,25 +7,16 @@
 >Project start date: 07/08/24
 
 >Naming conventions: - Files(Documentation): [Name_ddmmyy.TYPE]
->
->*Project Overview*
 
+
+>_Project Overview_
 >Objective: Develop an interactive whiteboard application.
-
 >Technologies: HTML, CSS, JavaScript.
-
 >Key Features:
-
 > - Drawing on the canvas.
-
 > - Multiple brush types.
-
 > - Different brush sizes.
-
 > - Color selection.
-
 > - Eraser tool.
-
 > - Clear the canvas functionality.
-
 > - Save the drawing as an image.
