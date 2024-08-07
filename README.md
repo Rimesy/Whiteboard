@@ -8,15 +8,15 @@
 
 >Naming conventions: - Files(Documentation): [Name_ddmmyy.TYPE]
 
+>
 
->PPROJECT OVERVIEW
+>PROJECT OVERVIEW
 
 >Objective: Develop an interactive whiteboard application.
 
 >Technologies: HTML, CSS, JavaScript.
 
 >Key Features:
-
 > - Drawing on the canvas.
 > - Multiple brush types.
 > - Different brush sizes.
