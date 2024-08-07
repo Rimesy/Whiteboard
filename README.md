@@ -7,8 +7,8 @@
 >Project start date: 07/08/24
 
 >Naming conventions: - Files(Documentation): [Name_ddmmyy.TYPE]
-
->Project Overview
+>
+>*Project Overview*
 
 >Objective: Develop an interactive whiteboard application.
 
