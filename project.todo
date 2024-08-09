@@ -1,5 +1,60 @@
-TODO: Finish making todo file
+PROJECT PLAN
+Phase 1: Setup and Basic Drawing
+    Project Setup:
+    - Create a new project directory.
+    - Initialise a new Git repository for version control.
+    - Set up basic HTML structure.
 
+    HTML Setup:
+    - TODO Create a basic HTML file (index.html)
+    - TODO Include a canvas element where the drawing will take place.
+    - TODO Add necessary buttons and inputs for color, brush size, and brush type selection.
 
-Phase 1:
-TODO: Create a new project directory.
+    Basic Drawing Functionality:
+    - TODO Set up the canvas in JavaScript.
+    - TODO Implement basic drawing functionality using mouse events (mousedown, mousemove, mouseup).
+    - TODO Allow the user to draw with a default brush and color.
+
+Phase 2: Enhanced Drawing Features
+    Brush Sizes:
+    - TODO Create input elements for selecting different brush sizes.
+    - TODO Implement the functionality to change brush sizes dynamically.
+
+    Color Selection:
+    - TODO Add a color picker input.
+    - TODO Implement the functionality to change the drawing color based on user selection.
+
+    Brush Types:
+    - TODO Implement different brush types (e.g., solid, dotted, spray).
+    - TODO Add buttons or dropdown for selecting brush types.
+
+    Eraser Tool:
+    - TODO Add an eraser tool to allow users to erase parts of their drawing.
+    - TODO Implement the eraser functionality by drawing with the canvas background color.
+
+Phase 3: Additional Functionalities
+    Clear Canvas:
+    - TODO Add a button to clear the entire canvas.
+    - TODO Implement the functionality to reset the canvas.
+
+    Save Drawing:
+    - TODO Implement a feature to save the current drawing as an image file.
+    - TODO Use the toDataURL method of the canvas to create an image file.
+
+Phase 4: User Interface and Experience
+    UI Enhancements:
+    - TODO Style the application using CSS for a better user experience.
+    - TODO Arrange buttons, inputs, and canvas in a user-friendly layout.
+
+    Responsive Design:
+    - TODO Ensure the application works well on different screen sizes.
+    - TODO Use CSS media queries to make the layout responsive.
+
+Phase 5: Testing and Deployment
+    Testing:
+    - TODO Test the application on different browsers and devices.
+    - TODO Fix any bugs and ensure smooth functionality.
+
+    Deployment:
+    - TODO Deploy the application using a service like GitHub Pages, Netlify, or Vercel.
+    - TODO Share the deployed application with others for feedback.
