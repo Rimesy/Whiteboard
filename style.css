@@ -1,0 +1,8 @@
+#Canvas {
+    width: 90%;
+    height: 40%;
+    border: 5px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(39, 189, 176);
+}

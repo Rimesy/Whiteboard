@@ -6,8 +6,8 @@ Phase 1: Setup and Basic Drawing
     - Set up basic HTML structure.
 
     HTML Setup:
-    - TODO Create a basic HTML file (index.html)
-    - TODO Include a canvas element where the drawing will take place.
+    - Create a basic HTML file (index.html)
+    - Include a canvas element where the drawing will take place.
     - TODO Add necessary buttons and inputs for color, brush size, and brush type selection.
 
     Basic Drawing Functionality:
