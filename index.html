@@ -10,8 +10,34 @@
   </head>
   <body>
     <main>
-      <div style="display: flex; justify-content: center;" width="100%">
-      <canvas id="Canvas"></canvas>
+      <div style="display: flex; justify-content: center; position: relative;" width="100%">
+        <div class="dropdown">
+          <button onclick="colourButton()" class="toolBar">Colour</button>
+          <div id="colourButton" class="dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="brushSizeButton()" class="toolBar">Brush size</button>
+          <div id="brushSizeButton" class="dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button onclick="brushTypeButton()" class="toolBar">Brush type</button>
+          <div id="brushTypeButton" class="dropdown-content">
+            <a href="#">Placeholder 1</a>
+            <a href="#">Placeholder 2</a>
+            <a href="#">Placeholder 3</a>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; position: relative;" width="100%">
+        <canvas id="canvas"></canvas>
       </div>
     </main>
 	<script src="index.js"></script>

@@ -8,7 +8,7 @@ Phase 1: Setup and Basic Drawing
     HTML Setup:
     - Create a basic HTML file (index.html)
     - Include a canvas element where the drawing will take place.
-    - TODO Add necessary buttons and inputs for color, brush size, and brush type selection.
+    - Add necessary buttons and inputs for color, brush size, and brush type selection.
 
     Basic Drawing Functionality:
     - TODO Set up the canvas in JavaScript.
