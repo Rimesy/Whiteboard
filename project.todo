@@ -11,7 +11,7 @@ Phase 1: Setup and Basic Drawing
     - Add necessary buttons and inputs for color, brush size, and brush type selection.
 
     Basic Drawing Functionality:
-    - TODO Set up the canvas in JavaScript.
+    - Set up the canvas in JavaScript.
     - TODO Implement basic drawing functionality using mouse events (mousedown, mousemove, mouseup).
     - TODO Allow the user to draw with a default brush and color.
 

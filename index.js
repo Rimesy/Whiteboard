@@ -1,3 +1,4 @@
+// DROPDOWN FUNCTIONS
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function colourButton() {
@@ -25,3 +26,7 @@ window.onclick = function(event) {
         }
     }
 }
+
+// CANVAS FUNCTIONS
+var c = document.getElementById("canvas");
+var ctx = c.getContext("2d");
