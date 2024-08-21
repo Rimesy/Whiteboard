@@ -1,4 +1,4 @@
-PROJECT PLAN
+PROJECT PLAN (base)
 Phase 1: Setup and Basic Drawing
     Project Setup:
     - Create a new project directory.
@@ -12,8 +12,8 @@ Phase 1: Setup and Basic Drawing
 
     Basic Drawing Functionality:
     - Set up the canvas in JavaScript.
-    - TODO Implement basic drawing functionality using mouse events (mousedown, mousemove, mouseup).
-    - TODO Allow the user to draw with a default brush and color.
+    - Implement basic drawing functionality using mouse events (mousedown, mousemove, mouseup).
+    - Allow the user to draw with a default brush and color.
 
 Phase 2: Enhanced Drawing Features
     Brush Sizes:
