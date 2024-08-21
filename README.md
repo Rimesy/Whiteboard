@@ -14,7 +14,7 @@
 > - Drawing on the canvas.
 > - Multiple brush types.
 > - Different brush sizes.
-> - Color selection.
+> - Colour selection.
 > - Eraser tool.
 > - Clear the canvas functionality.
 > - Save the drawing as an image.

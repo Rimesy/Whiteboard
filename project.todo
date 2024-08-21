@@ -8,21 +8,21 @@ Phase 1: Setup and Basic Drawing
     HTML Setup:
     - Create a basic HTML file (index.html)
     - Include a canvas element where the drawing will take place.
-    - Add necessary buttons and inputs for color, brush size, and brush type selection.
+    - Add necessary buttons and inputs for colour, brush size, and brush type selection.
 
     Basic Drawing Functionality:
     - Set up the canvas in JavaScript.
     - Implement basic drawing functionality using mouse events (mousedown, mousemove, mouseup).
-    - Allow the user to draw with a default brush and color.
+    - Allow the user to draw with a default brush and colour.
 
 Phase 2: Enhanced Drawing Features
     Brush Sizes:
     - TODO Create input elements for selecting different brush sizes.
     - TODO Implement the functionality to change brush sizes dynamically.
 
-    Color Selection:
-    - TODO Add a color picker input.
-    - TODO Implement the functionality to change the drawing color based on user selection.
+    Colour Selection:
+    - TODO Add a colour picker input.
+    - TODO Implement the functionality to change the drawing colour based on user selection.
 
     Brush Types:
     - TODO Implement different brush types (e.g., solid, dotted, spray).
@@ -30,7 +30,7 @@ Phase 2: Enhanced Drawing Features
 
     Eraser Tool:
     - TODO Add an eraser tool to allow users to erase parts of their drawing.
-    - TODO Implement the eraser functionality by drawing with the canvas background color.
+    - TODO Implement the eraser functionality by drawing with the canvas background colour.
 
 Phase 3: Additional Functionalities
     Clear Canvas:
