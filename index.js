@@ -26,6 +26,17 @@ window.onclick = function(event) {
     }
 }
 
+// SLIDER FUNCTIONS
+var slider = document.getElementById("brushSizeRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value // MARKER
+
+// Update the current slider value
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  console.log(slider.value);
+}
+
 // CANVAS FUNCTIONS
 // Set up canvas
 var c = document.getElementById("canvas");
