@@ -28,13 +28,14 @@ window.onclick = function(event) {
 
 // SLIDER FUNCTIONS
 var slider = document.getElementById("brushSizeRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value; // Display the default slider value // MARKER
+var output = 5;
+console.log("Default slider value is: " + slider.value);
+output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
-  console.log(slider.value);
+  console.log("Slider value is: " + slider.value);
 }
 
 // CANVAS FUNCTIONS
@@ -42,7 +43,7 @@ slider.oninput = function() {
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 ctx.strokeStyle = 'black';
-ctx.lineWidth = 5;
+ctx.lineWidth = 5; // MARKER
 
 // Adjust canvas for high DPI
 adjustCanvasForHighDPI();
