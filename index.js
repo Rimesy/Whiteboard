@@ -43,10 +43,10 @@ slider.oninput = function() {
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 ctx.strokeStyle = 'black';
-ctx.lineWidth = 5; // MARKER
+ctx.lineWidth = 5;
 
 // Adjust canvas for high DPI
-adjustCanvasForHighDPI();
+adjustCanvasForHighDPI(); // FIXME
 
 var isMouseDown = false;
 
