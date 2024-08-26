@@ -26,27 +26,18 @@ window.onclick = function(event) {
     }
 }
 
-// SLIDER FUNCTIONS
-var slider = document.getElementById("brushSizeRange");
-var output = 5;
-console.log("Default slider value is: " + slider.value);
-output.innerHTML = slider.value; // Display the default slider value
-
-// Update the current slider value
-slider.oninput = function() {
-  output.innerHTML = this.value;
-  console.log("Slider value is: " + slider.value);
-}
-
 // CANVAS FUNCTIONS
 // Set up canvas
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
 ctx.strokeStyle = 'black';
-ctx.lineWidth = 5;
+
+// Make dpr accessible outside it's main function
+// Get the device pixel ratio, which indicates how many device pixels correspond to one CSS pixel. Defaults to 1 if the browser doesn't support it.
+let dpr = window.devicePixelRatio || 1;
 
 // Adjust canvas for high DPI
-adjustCanvasForHighDPI(); // FIXME
+adjustCanvasForHighDPI();
 
 var isMouseDown = false;
 
@@ -91,9 +82,6 @@ canvas.addEventListener('mousemove', function(event) {
 
 // Function to adjust for high DPI screens
 function adjustCanvasForHighDPI() {
-    // Get the device pixel ratio, which indicates how many device pixels correspond to one CSS pixel. Defaults to 1 if the browser doesn't support it.
-    const dpr = window.devicePixelRatio || 1;
-
     // Get the size of the canvas as it appears on the screen (in CSS pixels).
     const rect = canvas.getBoundingClientRect();
 
@@ -107,4 +95,19 @@ function adjustCanvasForHighDPI() {
     // Set the canvas's CSS width and height to match the original dimensions (in CSS pixels) to avoid any stretching of the canvas element.
     canvas.style.width = `${rect.width}px`;
     canvas.style.height = `${rect.height}px`;
+
+    ctx.lineWidth = document.getElementById("brushSizeRange").value / dpr;
+}
+
+// SLIDER FUNCTIONS
+var slider = document.getElementById("brushSizeRange");
+var output = 5;
+console.log("Default slider value is: " + slider.value);
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value
+slider.oninput = function() {
+    output.innerHTML = this.value;
+    console.log("Slider value is: " + slider.value);
+    ctx.lineWidth = this.value / dpr;
 }

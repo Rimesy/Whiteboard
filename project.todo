@@ -17,8 +17,8 @@ Phase 1: Setup and Basic Drawing
 
 Phase 2: Enhanced Drawing Features
     Brush Sizes:
-    - TODO Create input elements for selecting different brush sizes.
-    - TODO Implement the functionality to change brush sizes dynamically.
+    - Create input elements for selecting different brush sizes.
+    - Implement the functionality to change brush sizes dynamically.
 
     Colour Selection:
     - TODO Add a colour picker input.
