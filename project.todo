@@ -22,7 +22,7 @@ Phase 2: Enhanced Drawing Features
 
     Colour Selection:
     - Add a colour picker input.
-    - TODO Implement the functionality to change the drawing colour based on user selection.
+    - Implement the functionality to change the drawing colour based on user selection.
 
     Brush Types:
     - TODO Implement different brush types (e.g., solid, dotted, spray).
