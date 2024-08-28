@@ -36,6 +36,9 @@ ctx.strokeStyle = 'black';
 // Get the device pixel ratio, which indicates how many device pixels correspond to one CSS pixel. Defaults to 1 if the browser doesn't support it.
 let dpr = window.devicePixelRatio || 1;
 
+// Set an initial value for brush type
+let currentBrush = 'solid';
+
 // Adjust canvas for high DPI
 adjustCanvasForHighDPI();
 
@@ -75,8 +78,22 @@ canvas.addEventListener('mousemove', function(event) {
         console.log('Moved to:', (x, y));
 
         // Draw on canvas
-        ctx.lineTo(x, y);
-        ctx.stroke();
+        if (currentBrush === 'solid') {
+            ctx.lineTo(x, y);
+            ctx.stroke();
+        } else if (currentBrush === 'dashed') {
+            ctx.setLineDash([5, 15]); // 5px dash, 15px gap
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            ctx.setLineDash([]); // Reset to solid line
+        } else if (currentBrush === 'spray') {
+            sprayPaint(x, y);
+        } else if (currentBrush === 'blurred') {
+            ctx.globalAlpha = 0.1; // Set lower opacity for a blurred effect
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            ctx.globalAlpha = 1.0; // Reset to full opacity
+        }
     }
 });
 
@@ -120,3 +137,23 @@ colourPicker.addEventListener('input', function() {
     console.log('Selected colour: ' + colourPicker.value);
     ctx.strokeStyle = colourPicker.value;
 });
+
+// BRUSH TYPE FUNCTIONS
+const brushType = document.getElementById('brushTypeButton');
+
+// Update brush type
+brushType.addEventListener('change', function() {
+    currentBrush = this.value;
+});
+
+// Function for spray paint effect
+function sprayPaint(x, y) {
+    const density = 50; // Number of spray particles
+    const radius = ctx.lineWidth * 2;
+
+    for (let i = 0; i < density; i++) {
+        const offsetX = (Math.random() - 0.5) * radius * 2;
+        const offsetY = (Math.random() - 0.5) * radius * 2;
+        ctx.fillRect(x + offsetX, y + offsetY, 1, 1);
+    }
+}
