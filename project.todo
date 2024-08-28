@@ -21,7 +21,7 @@ Phase 2: Enhanced Drawing Features
     - Implement the functionality to change brush sizes dynamically.
 
     Colour Selection:
-    - TODO Add a colour picker input.
+    - Add a colour picker input.
     - TODO Implement the functionality to change the drawing colour based on user selection.
 
     Brush Types:

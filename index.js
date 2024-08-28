@@ -111,3 +111,11 @@ slider.oninput = function() {
     console.log("Slider value is: " + slider.value);
     ctx.lineWidth = this.value / dpr;
 }
+
+// COLOUR PICKER FUNCTIONS
+const colourPicker = document.getElementById("colourPicker");
+
+// Output the selected colour
+colourPicker.addEventListener('input', function() {
+    console.log('Selected colour: ' + colourPicker.value);
+});
