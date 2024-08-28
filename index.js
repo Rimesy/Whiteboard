@@ -118,4 +118,5 @@ const colourPicker = document.getElementById("colourPicker");
 // Output the selected colour
 colourPicker.addEventListener('input', function() {
     console.log('Selected colour: ' + colourPicker.value);
+    ctx.strokeStyle = colourPicker.value;
 });
