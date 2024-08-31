@@ -20,3 +20,7 @@
 > - Eraser tool.
 > - Clear the canvas functionality.
 > - Save the drawing as an image.
+
+>How to run:
+> - As it stands you may only run this code by requesting to download it and running it locally on your device.
+> - Hopefully will be working on making it more accessible in the future if it becomes a long-term project.
