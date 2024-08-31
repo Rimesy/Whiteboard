@@ -11,10 +11,20 @@ function brushSizeButton() {
 function brushTypeButton() {
     document.getElementById("brushTypeButton").classList.toggle("show");
 }
+
+// This function is different because it does not need to show dropdown content
+function eraserButton() {
+    ctx.strokeStyle = "white"; // Set the brush colour to that of the canvas background
+}
   
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.toolBar')) {
+    /* if (event.target.matches('.eraserButtonArea')) {
+        console.log("Eraser Button Clicked");
+        ctx.strokeStyle = "white";
+    } */
+
+    if (!event.target.matches('.toolBar') && !event.target.matches('.dropdown-content')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {

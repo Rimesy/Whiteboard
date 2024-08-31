@@ -26,11 +26,11 @@ Phase 2: Enhanced Drawing Features
 
     Brush Types:
     - Implement different brush types (e.g., solid, dotted, spray).
-    - TODO Add buttons or dropdown for selecting brush types.
+    - Add buttons or dropdown for selecting brush types.
 
     Eraser Tool:
-    - TODO Add an eraser tool to allow users to erase parts of their drawing.
-    - TODO Implement the eraser functionality by drawing with the canvas background colour.
+    - Add an eraser tool to allow users to erase parts of their drawing.
+    - Implement the eraser functionality by drawing with the canvas background colour.
 
 Phase 3: Additional Functionalities
     Clear Canvas:
@@ -56,5 +56,4 @@ Phase 5: Testing and Deployment
     - TODO Fix any bugs and ensure smooth functionality.
 
     Deployment:
-    - TODO Deploy the application using a service like GitHub Pages, Netlify, or Vercel.
     - TODO Share the deployed application with others for feedback.
