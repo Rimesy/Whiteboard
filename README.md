@@ -4,13 +4,15 @@
 
 >Project start date: 07/08/24
 
->PROJECT OVERVIEW
+>PROJECT OVERVIEW (wip)
+
+>This is just a small project to keep me busy over summer 2024.
 
 >Objective: Develop an interactive whiteboard application.
 
 >Technologies: HTML, CSS, JavaScript.
 
->Key Features:
+>Functional Requirements:
 > - Drawing on the canvas.
 > - Multiple brush types.
 > - Different brush sizes.
@@ -18,5 +20,3 @@
 > - Eraser tool.
 > - Clear the canvas functionality.
 > - Save the drawing as an image.
-
->Naming conventions: - Files(Documentation): [Name_ddmmyy.TYPE]

@@ -1,4 +1,4 @@
-// DROPDOWN FUNCTIONS
+// BUTTON FUNCTIONS
 // When the user clicks on the button, toggle between hiding and showing the dropdown content 
 function colourButton() {
     document.getElementById("colourButton").classList.toggle("show");
@@ -15,15 +15,12 @@ function brushTypeButton() {
 // This function is different because it does not need to show dropdown content
 function eraserButton() {
     ctx.strokeStyle = "white"; // Set the brush colour to that of the canvas background
+    // FIXME When colourButton pressed, return to previous colour
 }
-  
+
+// DROPDOWN FUNCTIONS
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    /* if (event.target.matches('.eraserButtonArea')) {
-        console.log("Eraser Button Clicked");
-        ctx.strokeStyle = "white";
-    } */
-
     if (!event.target.matches('.toolBar') && !event.target.matches('.dropdown-content')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
