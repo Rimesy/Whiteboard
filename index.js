@@ -2,24 +2,22 @@
 
 // When saved button is pressed, the current state of the canvas is turned into an image and the users file management save window comes up
 function saveImageButton() {
-    // Convert the canvas content to a data URL
-    const dataURL = canvas.toDataURL('image/png');
+    // Convert the canvas content to a Blob
+    canvas.toBlob(function(blob) {
+        // Create a new URL for the Blob
+        const url = URL.createObjectURL(blob);
 
-    // Create a temporary link element
-    const link = document.createElement('a');
-    link.href = dataURL;
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'canvas-image.png';
 
-    // Set the download attribute with a default file name
-    link.download = 'canvas-image.png';
+        // Programmatically click the link to trigger the download
+        link.click();
 
-    // Append the link to the document body (necessary for Firefox)
-    document.body.appendChild(link);
-
-    // Programmatically click the link to trigger the download
-    link.click();
-
-    // Remove the link from the document
-    document.body.removeChild(link);
+        // Release the object URL to free memory
+        URL.revokeObjectURL(url);
+    }, 'image/png');
 }
 
 // When clear canvas button is pressed, fill the whole canvas with a clear colour
