@@ -1,5 +1,11 @@
 // BUTTON FUNCTIONS
-// When the user clicks on the button, toggle between hiding and showing the dropdown content 
+
+// When clear canvas button is pressed, fill the whole canvas with a clear colour
+function clearButton() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // clearRect creates a rect of transparent colour
+}
+
+// When the user clicks on these buttons, toggle between hiding and showing the dropdown content 
 function colourButton() {
     document.getElementById("colourButton").classList.toggle("show");
 }
@@ -12,7 +18,7 @@ function brushTypeButton() {
     document.getElementById("brushTypeButton").classList.toggle("show");
 }
 
-// This function is different because it does not need to show dropdown content
+// When eraser button is pressed, set brush colour to white as to hide(erase) other drawings
 function eraserButton() {
     ctx.strokeStyle = "white"; // Set the brush colour to that of the canvas background
     // FIXME When colourButton pressed, return to previous colour
@@ -163,4 +169,4 @@ function sprayPaint(x, y) {
         const offsetY = (Math.random() - 0.5) * radius * 2;
         ctx.fillRect(x + offsetX, y + offsetY, 1, 1);
     }
-}
+} // FIXME Spray paint is always black

@@ -35,7 +35,7 @@ Phase 2: Enhanced Drawing Features
 Phase 3: Additional Functionalities
     Clear Canvas:
     - Add a button to clear the entire canvas.
-    - TODO Implement the functionality to reset the canvas.
+    - Implement the functionality to reset the canvas.
 
     Save Drawing:
     - TODO Implement a feature to save the current drawing as an image file.
