@@ -38,7 +38,7 @@ Phase 3: Additional Functionalities
     - Implement the functionality to reset the canvas.
 
     Save Drawing:
-    - TODO Implement a feature to save the current drawing as an image file.
+    - Implement a feature to save the current drawing as an image file.
     - TODO Use the toDataURL method of the canvas to create an image file.
 
 Phase 4: User Interface and Experience
