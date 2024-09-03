@@ -65,8 +65,6 @@ window.onclick = function(event) {
 // Set up canvas
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
-ctx.strokeStyle = 'white';
-ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = 'black';
 
 // Make dpr accessible outside it's main function
@@ -78,6 +76,10 @@ let currentBrush = 'solid';
 
 // Adjust canvas for high DPI
 adjustCanvasForHighDPI();
+
+// Initial canvas is white
+ctx.fillStyle = "white";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 var isMouseDown = false;
 
