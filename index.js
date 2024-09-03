@@ -1,5 +1,27 @@
 // BUTTON FUNCTIONS
 
+// When saved button is pressed, the current state of the canvas is turned into an image and the users file management save window comes up
+function saveImageButton() {
+    // Convert the canvas content to a data URL
+    const dataURL = canvas.toDataURL('image/png');
+
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = dataURL;
+
+    // Set the download attribute with a default file name
+    link.download = 'canvas-image.png';
+
+    // Append the link to the document body (necessary for Firefox)
+    document.body.appendChild(link);
+
+    // Programmatically click the link to trigger the download
+    link.click();
+
+    // Remove the link from the document
+    document.body.removeChild(link);
+}
+
 // When clear canvas button is pressed, fill the whole canvas with a clear colour
 function clearButton() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // clearRect creates a rect of transparent colour
@@ -43,6 +65,8 @@ window.onclick = function(event) {
 // Set up canvas
 var c = document.getElementById("canvas");
 var ctx = c.getContext("2d");
+ctx.strokeStyle = 'white';
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.strokeStyle = 'black';
 
 // Make dpr accessible outside it's main function
