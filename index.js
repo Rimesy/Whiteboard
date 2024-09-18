@@ -28,6 +28,7 @@ function clearButton() {
 // When the user clicks on these buttons, toggle between hiding and showing the dropdown content 
 function colourButton() {
     document.getElementById("colourButton").classList.toggle("show");
+    ctx.strokeStyle = colourPicker.value; // When the button is pressed, the previous colour is selected
 }
 
 function brushSizeButton() {
@@ -41,7 +42,6 @@ function brushTypeButton() {
 // When eraser button is pressed, set brush colour to white as to hide(erase) other drawings
 function eraserButton() {
     ctx.strokeStyle = "white"; // Set the brush colour to that of the canvas background
-    // FIXME When colourButton pressed, return to previous colour
 }
 
 // DROPDOWN FUNCTIONS
