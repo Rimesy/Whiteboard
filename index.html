@@ -10,29 +10,31 @@
   </head>
   <body>
     <main>
+      <div style="display: flex; justify-content: left; position: relative; margin-bottom: -(height);">
+        <div class="toolBarSection">
+          <button onclick="saveImageButton()" class="buttonClass">Save</button>
+        </div>
+        <div class="toolBarSection">
+          <button onclick="clearButton()" class="buttonClass">Clear Canvas</button>
+        </div>
+      </div>
       <div style="display: flex; justify-content: center; position: relative;" width="100%">
-        <div class="dropdown">
-          <button onclick="saveImageButton()" class="toolBar">Save</button>
-        </div>
-        <div class="dropdown">
-          <button onclick="clearButton()" class="toolBar">Clear Canvas</button>
-        </div>
-        <div class="dropdown">
-          <button onclick="colourButton()" class="toolBar">Colour</button>
+        <div class="toolBarSection">
+          <button onclick="colourButton()" class="buttonClass">Colour</button>
           <div id="colourButton" class="dropdown-content">
             <input type="color" id="colourPicker" name="colourPicker" value="#000000">
           </div>
         </div>
-        <div class="dropdown">
-          <button onclick="brushSizeButton()" class="toolBar">Brush size</button>
+        <div class="toolBarSection">
+          <button onclick="brushSizeButton()" class="buttonClass">Brush size</button>
           <div id="brushSizeButton" class="dropdown-content">
             <div class="slidecontainer">
               <input type="range" min="1" max="100" value="5" class="slider" id="brushSizeRange">
             </div>
           </div>
         </div>
-        <div class="dropdown">
-          <button onclick="brushTypeButton()" class="toolBar">Brush type</button>
+        <div class="toolBarSection">
+          <button onclick="brushTypeButton()" class="buttonClass">Brush type</button>
           <select id="brushTypeButton" class="dropdown-content">
             <option value="solid">Solid Line</option>
             <option value="dashed">Dashed Line</option>
@@ -40,8 +42,8 @@
             <option value="blurred">Blurred Brush</option>
           </select>
         </div>
-        <div class="dropdown">
-          <button onclick="eraserButton()" class="toolBar">Eraser</button>
+        <div class="toolBarSection">
+          <button onclick="eraserButton()" class="buttonClass">Eraser</button>
         </div>
       </div>
       <div style="display: flex; justify-content: center; position: relative;" width="100%">

@@ -25,6 +25,8 @@ function clearButton() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // clearRect creates a rect of transparent colour
 }
 
+// FIXME Buttons aren't in one row
+
 // When the user clicks on these buttons, toggle between hiding and showing the dropdown content 
 function colourButton() {
     document.getElementById("colourButton").classList.toggle("show");
