@@ -49,8 +49,8 @@ function eraserButton() {
 // DROPDOWN FUNCTIONS
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.toolBar') && !event.target.matches('.dropdown-content')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.toolBarSection') && !event.target.matches('.buttonClass-content')) {
+        var dropdowns = document.getElementsByClassName("buttonClass-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];

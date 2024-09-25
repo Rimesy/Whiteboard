@@ -32,7 +32,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.buttonClass-content {
     display: none;
     position: absolute;
     float: right;
@@ -43,7 +43,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.buttonClass-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -51,7 +51,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.buttonClass-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu */
 .show {display:block;}

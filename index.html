@@ -10,7 +10,7 @@
   </head>
   <body>
     <main>
-      <div style="display: flex; justify-content: left; position: relative; margin-bottom: -(height);">
+      <div style="display: flex; justify-content: left; position: relative; width: 25%; margin-bottom: -2.5%; z-index: 1;">
         <div class="toolBarSection">
           <button onclick="saveImageButton()" class="buttonClass">Save</button>
         </div>
@@ -21,13 +21,13 @@
       <div style="display: flex; justify-content: center; position: relative;" width="100%">
         <div class="toolBarSection">
           <button onclick="colourButton()" class="buttonClass">Colour</button>
-          <div id="colourButton" class="dropdown-content">
+          <div id="colourButton" class="buttonClass-content">
             <input type="color" id="colourPicker" name="colourPicker" value="#000000">
           </div>
         </div>
         <div class="toolBarSection">
           <button onclick="brushSizeButton()" class="buttonClass">Brush size</button>
-          <div id="brushSizeButton" class="dropdown-content">
+          <div id="brushSizeButton" class="buttonClass-content">
             <div class="slidecontainer">
               <input type="range" min="1" max="100" value="5" class="slider" id="brushSizeRange">
             </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="toolBarSection">
           <button onclick="brushTypeButton()" class="buttonClass">Brush type</button>
-          <select id="brushTypeButton" class="dropdown-content">
+          <select id="brushTypeButton" class="buttonClass-content">
             <option value="solid">Solid Line</option>
             <option value="dashed">Dashed Line</option>
             <option value="spray">Spray Paint</option>
