@@ -3,7 +3,7 @@
 html {background-color: rgb(252, 255, 253)}
 
 /* The container <div> - needed to position the dropdown content */
-.buttonClass {
+.toolBarButton {
     position: relative;
     margin-left: 5px;
     margin-right: 5px;
@@ -21,7 +21,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Dropdown button on hover & focus */
-.buttonClass:hover, .buttonClass:focus {
+.toolBarButton:hover, .toolBarButton:focus {
     background-color: #2980B9;
 }
 
@@ -32,7 +32,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Dropdown Content (Hidden by Default) */
-.buttonClass-content {
+.dropdown-content {
     display: none;
     position: absolute;
     float: right;
@@ -43,7 +43,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Links inside the dropdown */
-.buttonClass-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -51,7 +51,7 @@ html {background-color: rgb(252, 255, 253)}
 }
 
 /* Change color of dropdown links on hover */
-.buttonClass-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;}
 
 /* Show the dropdown menu */
 .show {display:block;}
