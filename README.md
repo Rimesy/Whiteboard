@@ -13,7 +13,7 @@ Objective: Develop an interactive whiteboard application.
 
 Technologies: HTML, CSS, JavaScript.
 
-### >Functional Requirements:
+### Functional Requirements:
  - Drawing on the canvas.
  - Multiple brush types.
  - Different brush sizes.
