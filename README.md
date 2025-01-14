@@ -4,9 +4,9 @@
 
 >Project start date: 07/08/24
 
->PROJECT OVERVIEW (wip)
+>PROJECT OVERVIEW
 
->This is just a small project to keep me busy over summer 2024.
+>This is just a small project originally meant to keep me busy over summer 2024. *See 'Future plans' for what I would like to do with this project in the future. 
 
 >Objective: Develop an interactive whiteboard application.
 
@@ -24,5 +24,9 @@
 >How to run:
 > - As it stands you may only run this code by requesting to download it and running it locally on your device.
 > - Hopefully will be working on making it more accessible in the future if it becomes a long-term project.
+
+>Future plans:
+> - Style the application for visual appeal.
+> - Migrate the code to the React framework.
 
 > I have a license for this project to protect the potential of future publication.
